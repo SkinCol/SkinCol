@@ -1,31 +1,22 @@
-.lola1{
-    width: 25%;
-    height: 200px;
-    background-color: red;
+html,
+body,
+header,
+.view {
+  height: 100%;
 }
-.lola2{
-    width: 25%;
-    height: 200px;
-    background-color: black;
-}.lola3{
-    width: 25%;
-    height: 200px;
-    background-color: red;
-}
-.lola4{
-    width: 25%;
-    height: 200px;
-    background-color: black;
 
+/* Carousel*/
+.carousel,
+.carousel-item,
+.carousel-item.active {
+  height: 100%;
 }
-header{
-    background-color: black;
-    border-top: 2px solid blue;
+.carousel-inner {
+  height: 100%;
 }
-.boto{
-    border: 1px solid white;
-}
-/* .container{
-    background-color: blueviolet;
-} */
 
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #1c2331 !important;
+  }
+}
