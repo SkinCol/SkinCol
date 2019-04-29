@@ -16,7 +16,7 @@ header,
 }
 
 main{
-  margin-bottom: 15%;
+  margin-bottom: 25%;
 }
 @media (min-width: 800px) and (max-width: 850px) {
   .navbar:not(.top-nav-collapse) {
