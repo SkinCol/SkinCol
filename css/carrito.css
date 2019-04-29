@@ -1,0 +1,17 @@
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+.primero{
+    margin-top: 130px;
+    
+}
+.img{
+    float: left;
+}
+
+.hola{
+    border-right: solid 2px
+}
