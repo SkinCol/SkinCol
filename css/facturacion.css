@@ -5,9 +5,13 @@ header,
   height: 100%;
 }
 
-.row{
-    margin-top: 110px
+.primero{
+    margin-top: 110px;
+    
 }
 .pro{
     float: left;
+}
+.pri{
+  border-right: solid 2px;
 }
