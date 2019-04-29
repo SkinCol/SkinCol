@@ -15,7 +15,9 @@ header,
   height: 100%;
 }
 
-
+main{
+  margin-bottom: 15%;
+}
 @media (min-width: 800px) and (max-width: 850px) {
   .navbar:not(.top-nav-collapse) {
     background: #1c2331 !important;
