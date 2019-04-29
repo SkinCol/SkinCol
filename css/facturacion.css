@@ -1,0 +1,13 @@
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+.row{
+    margin-top: 110px
+}
+.pro{
+    float: left;
+}
