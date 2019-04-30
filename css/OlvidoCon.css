@@ -1,0 +1,67 @@
+
+.primero{
+    width: 450px;
+    background-color: #2a4049;
+    padding: 35px 45px 35px 50px;
+    margin: auto;
+    margin-top: 25%;
+    border-radius: 9px;
+    margin-bottom:25%;
+}
+
+
+
+ #enviar1{
+    margin: auto;
+	width:100%;
+	border: #fff solid 2px;
+	cursor:pointer;
+	background-color:#446775;
+	color:white;
+	font-size:20px;
+	font-weight:450;
+	padding-top:5px;
+	padding-bottom:5px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-bottom: 7px;
+}
+
+
+
+
+.form-control{
+color:#3c3c3c;
+ line-height:22px;
+ background-color:#fbfbfb;
+ padding: 20px 20px 20px 54px;
+ margin-bottom:10px;
+ width:100%;
+ box-sizing:border-box;
+
+ }
+
+
+.form-control.error{
+    line-height:22px;
+    border: red solid 6px;
+    padding: 13px 13px 13px 54px;
+    border:0px;
+}
+
+
+.img-fluid{
+    margin: auto;
+
+}
+label{
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin-left:10%;
+    margin-right: 10%
+
+}
+
+

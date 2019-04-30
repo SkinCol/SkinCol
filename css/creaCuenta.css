@@ -1,0 +1,14 @@
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+.primero{
+    width: 800px; 
+    padding: 35px 45px 35px 50px;
+    margin: auto;
+    margin-top: 20%;
+    border-radius: 9px;
+    margin-bottom:25%;   
+}
