@@ -121,71 +121,59 @@
               <!-- Table  -->
               <div class="row justify-content-end">
                 <div class="col-md-12 ">
-                    <div class="btn btn-secondary"><i class="fas fa-edit"></i> Editar</div>
-                    <div class="btn btn-primary"><i class="fas fa-check"></i> Activar</div>
-                    <div class="btn btn-danger"><i class="fas fa-window-close"></i> Desactivar</div>
+                  <div class="btn btn-success" onclick="mostratform(true)"><i class="far fa-plus-square"></i> Agregar</div>
                 </div>
               </div>
-              
-              <table class="table table-hover">
-                <!-- Table head -->
-                <thead class="blue-grey lighten-4">
-                  <tr>
-                    <th>No.</th>
-                    <th>Nit</th>
-                    <th>Dirección</th>
-                    <th>Correo</th>
-                    <th>Telefono</th>
-                    <th><i class="fas fa-check-circle"></i></th>
-                  </tr>
-                </thead>
-                <!-- Table head -->
 
-                <!-- Table body -->
-                <tbody>
-                  <table>
-                    
+              <table class="table table-hover">
+
+                <!-- Table head -->
+                <div id="listadoregistros">
+                  <table id="tbllistado" class="table table-striped">
+                    <thead class="blue-grey lighten-4">
+                      <tr>
+                        <th>No.</th>
+                        <th>Nit</th>
+                        <th>Dirección</th>
+                        <th>Correo</th>
+                        <th>Telefono</th>
+                      </tr>
+                    </thead>
                   </table>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Cell 1</td>
-                    <td>Cell 2</td>
-                    <td>Cell 3</td>
-                    <td>Cell 3</td>
-                    <td>
-                      <div class="form-check">
-                        <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Cell 4</td>
-                    <td>Cell 5</td>
-                    <td>Cell 6</td>
-                    <td>Cell 3</td>
-                    <td>
-                      <div class="form-check">
-                        <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Cell 7</td>
-                    <td>Cell 8</td>
-                    <td>Cell 9</td>
-                    <td>Cell 3</td>
-                    <td>
-                      <div class="form-check">
-                        <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-                <!-- Table body -->
+                </div>
+                <!-- Table head -->
               </table>
               <!-- Table  -->
+
+
+              <!-- Form -->
+              <div class="panel-body" style="height: 400px;" id="formularioregistros">
+                <form name="formulario" id="formulario" method="POST">
+                  <div class="form-group col-sm-12 col-md-6 col-xl-10">
+                      <label>NIT</label>
+                      <input type="hidden" name="idproveedor" id="idproveedor">
+                      <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese un Nombre" required>
+                  </div>
+                  <div class="form-group col-sm-12 col-md-6 col-xl-10">
+                    <label>Dirección</label>
+                    <input type="text" name="direccion" id="direccion" class="form-control" placeholder="Ingrese la Dirección">
+                  </div>
+                  <div class="form-group col-sm-12 col-md-6 col-xl-10">
+                      <label>Correo</label>
+                      <input type="text" name="correo" id="correo" class="form-control" placeholder="Ingrese el Correo">
+                  </div>
+                  <div class="form-group col-sm-12 col-md-6 col-xl-10">
+                    <label>Telefono</label>
+                    <input id="telefono" name="telefono" class="form-control" type="text" placeholder="Ingrese el Telefono">
+                  </div>
+                  <div class="form-group col-sm-12 col-md-6 col-xl-10">
+                    <button class="btn btn-primary" type="submit" id="btnGuardar"><i class="fa fa-save"></i> Guardar</button>
+                    <button class="btn btn-danger" type="button" onclick="canelarform()"><i class="fa fa-arrow-alt-circle-left"></i> Cancelar</button>
+                  </div>
+                </form>
+              </div>
+              <!-- Form -->
+
             </div>
 
           </div>
