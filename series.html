@@ -10,227 +10,253 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/mdb.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="css/estilos.css" />
-  <link rel="shortcut icon" type="image/x-ico" href="favicon.png" />
-  <style type="text/css">
-    html,
-    body,
-    header,
-    .carousel {
-      height: 60vh;
-    }
+  <!-- <link rel="stylesheet" href="css/estilos.css" /> -->
+  <link rel="shortcut icon" type="" href="favicon.ico" />
 
-    @media (max-width: 740px) {
-
-      html,
-      body,
-      header,
-      .carousel {
-        height: 100vh;
-      }
-    }
-
-    @media (min-width: 800px) and (max-width: 850px) {
-
-      html,
-      body,
-      header,
-      .carousel {
-        height: 100vh;
-      }
-    }
-
-    @media (min-width: 800px) and (max-width: 850px) {
-      .navbar:not(.top-nav-collapse) {
-        background: #929FBA !important;
-      }
-    }
-  </style>
 </head>
 
 <body>
-  <header>
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar mb-5">
+    <div class="container">
 
-    <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-      <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html" target="_blank">
+        <img src="img/Logo Skin.png" style="width:150px" alt="">
+      </a>
 
-        <!-- Brand -->
-        <a class="navbar-brand" href="index.html" target="_blank">
-          <img src="img/Logo Skin.png" style="width:150px" alt="">
-        </a>
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- Collapse -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <!-- Links -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="dispositivos.html">Dispositivos
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="limitados.html" target="_blank">Limitados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="series.html" target="_blank">Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank">Personalizador</a>
+          </li>
+        </ul>
 
-          <!-- Left -->
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="dispositivos.html">Dispositivos
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="limitados.html" target="_blank">Limitados</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="series.html" target="_blank">Series</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" target="_blank">Personalizador</a>
-            </li>
-          </ul>
-
-          <!-- Right -->
-          <ul class="navbar-nav nav-flex-icons">
-            <li class="nav-item">
-              <a href="https://www.facebook.com/" class="nav-link" target="_blank">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="https://twitter.com/" class="nav-link" target="_blank">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="IncioSesion.html"
-                class="nav-link border border-light rounded" target="_blank">
-                <i class="fas fa-user"></i>Iniciar Sesión
-              </a>
-            </li>
-          </ul>
-
-        </div>
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="https://www.facebook.com/" class="nav-link" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/" class="nav-link" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="IncioSesion.html" class="nav-link border border-light rounded" target="_blank">
+              <i class="fas fa-user"></i>Iniciar Sesión
+            </a>
+          </li>
+        </ul>
 
       </div>
-    </nav>
-    <!-- Navbar -->
-
-    <!--Carousel Wrapper-->
-    <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
-
-      <!--Indicators-->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-        <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-      </ol>
-      <!--/.Indicators-->
-
-      <!--Slides-->
-      <div class="carousel-inner" role="listbox">
-
-        <!--First slide-->
-        <div class="carousel-item active">
-          <div class="view"
-            style="background-image: url('img/Series/Transparent-Limited.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-            <!-- Mask & flexbox options-->
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-              <!-- Content -->
-              <div class="text-center white-text mx-5 wow fadeIn">
-                <h1 class="mb-4">
-                  <strong>Trasparente</strong>
-                </h1>
-
-                <a target="_blank" href="#"
-                  class="btn btn-outline-white btn-lg">Ver
-                  <i class="fas fa-eye"></i>
-                </a>
-              </div>
-              <!-- Content -->
-
-            </div>
-            <!-- Mask & flexbox options-->
-
-          </div>
-        </div>
-        <!--/First slide-->
-
-        <!--Second slide-->
-        <div class="carousel-item">
-          <div class="view"
-            style="background-image: url('img/Series/ColorShift-Limited.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-            <!-- Mask & flexbox options-->
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-              <!-- Content -->
-                  <div class="text-center white-text mx-5 wow fadeIn">
-                    <h1 class="mb-4">
-                      <strong>Color Shift</strong>
-                    </h1>
-    
-                    <a target="_blank" href="#"
-                      class="btn btn-outline-white btn-lg">Ver
-                      <i class="fas fa-eye"></i>
-                    </a>
-                  </div>
-              <!-- Content -->
-
-            </div>
-            <!-- Mask & flexbox options-->
-
-          </div>
-        </div>
-        <!--/Second slide-->
-
-        <!--Third slide-->
-        <div class="carousel-item">
-          <div class="view"
-            style="background-image: url('img/Series/Venom-Limited.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-            <!-- Mask & flexbox options-->
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-
-              <!-- Content -->
-              <div class="text-center white-text mx-5 wow fadeIn">
-                  <h1 class="mb-4">
-                    <strong>Venom</strong>
-                  </h1>
-  
-                  <a target="_blank" href="#"
-                    class="btn btn-outline-white btn-lg">Ver
-                    <i class="fas fa-eye"></i>
-                  </a>
-                </div>
-            <!-- Content -->
-              
-
-            </div>
-            <!-- Mask & flexbox options-->
-
-          </div>
-        </div>
-        <!--/Third slide-->
-
-      </div>
-      <!--/.Slides-->
-
-      <!--Controls-->
-      <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Anterior</span>
-      </a>
-      <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Siguiente</span>
-      </a>
-      <!--/.Controls-->
 
     </div>
-    <!--/.Carousel Wrapper-->
+  </nav>
+  <!-- Navbar -->
 
-  </header>
+  <!--Main layout-->
+  <main class="pt-5 mt-5">
+    <!-- Card group -->
+    <div class="card-group">
+
+      <!-- Card -->
+      <div class="card mb-4">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <!-- Title -->
+          <h4 class="card-title">Card title</h4>
+          <!-- Text -->
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-primary btn-md">Read more</button>
+
+        </div>
+        <!-- Card content -->
+
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card mb-4">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/48.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+          <!-- Title -->
+          <h4 class="card-title">Card title</h4>
+          <!-- Text -->
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-primary btn-md">Read more</button>
+
+        </div>
+        <!-- Card content -->
+
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card mb-4">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/77.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <!-- Title -->
+          <h4 class="card-title">Card title</h4>
+          <!-- Text -->
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-primary btn-md">Read more</button>
+
+        </div>
+        <!-- Card content -->
+
+      </div>
+      <!-- Card -->
+
+    </div>
+    <!-- Card group -->
+    <!-- Card group -->
+    <div class="card-group">
+
+      <!-- Card -->
+      <div class="card mb-4">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <!-- Title -->
+          <h4 class="card-title">Card title</h4>
+          <!-- Text -->
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-primary btn-md">Read more</button>
+
+        </div>
+        <!-- Card content -->
+
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card mb-4">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/48.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+          <!-- Title -->
+          <h4 class="card-title">Card title</h4>
+          <!-- Text -->
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-primary btn-md">Read more</button>
+
+        </div>
+        <!-- Card content -->
+
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card mb-4">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/77.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <!-- Title -->
+          <h4 class="card-title">Card title</h4>
+          <!-- Text -->
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-primary btn-md">Read more</button>
+
+        </div>
+        <!-- Card content -->
+
+      </div>
+      <!-- Card -->
+
+    </div>
+    <!-- Card group -->
+  </main>
+  <!--Main layout-->
 
   <!--Footer-->
   <footer class="page-footer font-small unique-color-dark pt-4">
@@ -260,11 +286,20 @@
 
   </footer>
   <!--/.Footer-->
-  <script src="js/jquery.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/mdb.min.js"></script>
-  <script type="text/javascript">new WOW().init();</script>
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
 </body>
 
 </html>
