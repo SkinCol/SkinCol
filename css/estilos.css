@@ -38,5 +38,21 @@ main{
   }
 }
 
+.card:hover .entry-title {
+  background-position: -100% 0;
+  color: white;
+}
 
-
+.entry-title {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #1c2331 50%);
+  background-size: 200%;
+  background-position: 0 0;
+  display: inline;
+  transition: .1s ease-in-out;
+  font-family: raleway, arial, sans-serif;
+  text-transform: capitalize;
+}
+.entry-title a {
+  color: white;
+  text-decoration: none;
+}
