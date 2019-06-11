@@ -3,46 +3,53 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>SkinCol</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/mdb.min.css" />
-  <link rel="stylesheet" href="css/style.min.css" />
-  <link rel="stylesheet" href="css/InicioSesion.css" />
-
-  <link rel="shortcut icon" type="image/x-ico" href="favicon.png" />
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="shortcut icon" type="" href="favicon.ico" />
 </head>
 
 <body>
+  <!-- Navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
     <div class="container">
+
+      <!-- Brand -->
       <a class="navbar-brand" href="index.html" target="_blank">
-        <img src="img/Logo Skin.png" style="width:150px" alt="" />
+        <img src="img/Logo Skin.png" style="width:150px" alt="">
       </a>
 
+      <!-- Collapse -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
+      <!-- Links -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Dispositivos</a>
+            <a class="nav-link" href="dispositivos.html">Dispositivos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" target="_blank">Limitado</a>
+            <a class="nav-link" href="limitados.html" target="_blank">Limitado</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" target="_blank">Series</a>
+            <a class="nav-link" href="series.html" target="_blank">Series</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" target="_blank">Personalizador</a>
           </li>
         </ul>
 
+        <!-- Right -->
         <ul class="navbar-nav nav-flex-icons">
           <li class="nav-item">
             <a href="https://www.facebook.com" class="nav-link" target="_blank">
@@ -55,59 +62,70 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link border border-light rounded waves-effect waves-light" target="_blank">
+            <a href="IncioSesion.html" class="nav-link border border-light rounded waves-effect waves-light" target="_blank">
               <i class="fas fa-user"></i> Iniciar Sesión
             </a>
           </li>
         </ul>
+
       </div>
+
     </div>
   </nav>
 
+  <!--Carousel Wrapper-->
+  <div id="carousel-home" class="carousel slide carousel-fade">
 
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-home" data-slide-to="1"></li>
+      <li data-target="#carousel-home" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
 
-  <div class="container">
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
 
-    <div class="row primero">
-      <div class="col">
-
-        <form action="#" id="formRegister" onsubmit="metFormulario.valFormCompleto()">
-          <label>Ingresar</label>
-
-          <div class="user"> <img src="img/user.png"
-              class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-center,rounded-circle,|}"
-              width="110px" height="110px" margin="center" alt=""></div>
-
-          <label for="">Usuario</label>
-          <div class="input-group mb-3">
-            <div class="input-group-append">
-              <span class="input-group-text" id="my-addon"><img src="img/email.png" width="23px" height="23px" /></span>
-            </div>
-            <input class="form-control input" id="email" type="text" placeholder="Ingrese su email"
-              aria-label="Recipient's " aria-describedby="my-addon" onblur="revisar(this)" />
-          </div>
-
-          <label for="">Contraseña</label>
-          <div class="input-group mb-3">
-            <div class="input-group-append">
-              <span class="input-group-text" id="my-addon"><img src="img/password.png" width="23px"
-                  height="23px" /></span>
-            </div>
-            <input class="form-control" id="password" type="password" placeholder="Ingrese su contraseña"
-              aria-label="Recipient's " aria-describedby="my-addon" onblur="revisar(this)" />
-          </div>
-
-          <button type="submit" class="btn btn-primary" id="enviar">Ingresar<a href="Conversor.html"></a>
-            <div class="transicion"> </div>
-          </button>
-          <button type="submit" class="btn btn-primary" id="enviar1">Registrarse<a href="Formulario.html"></a></button>
-        </form>
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="view col-md-12 col-sm-12"
+          style="background-image: url('img/prueba.jpg'); background-repeat: no-repeat; background-size: cover;">
+        </div>
       </div>
+      <!--/First slide-->
+
+      <!--Second slide-->
+      <div class="carousel-item">
+        <div class="view"
+          style="background-image: url('img/prueba2.jpg'); background-repeat: no-repeat; background-size: cover;">
+        </div>
+      </div>
+      <!--/Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <div class="view"
+          style="background-image: url('img/prueba3.jpg'); background-repeat: no-repeat; background-size: cover;">
+        </div>
+      </div>
+      <!--/Third slide-->
     </div>
+    <!--/.Slides-->
+
+    <!--Controles-->
+    <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterio</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+    <!--/.Controles-->
+
   </div>
-
-
-
+  <!--/.Carousel Wrapper-->
 
   <!--Footer-->
   <footer class="page-footer font-small unique-color-dark pt-4">
