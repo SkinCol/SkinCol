@@ -5,12 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>SkinCol | Dashboard</title>
+  <title>SkinCol | Mi Cuenta</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/mdb.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <!--<link rel="stylesheet" href="css/estilos.css" />-->
+  <link rel="stylesheet" href="css/text.css" />
   <link rel="shortcut icon" type="" href="favicon.ico" />
 </head>
 
@@ -35,18 +35,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
           <!-- Left -->
+
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link waves-effect" href="#">Dashboard</a>
+            <li class="nav-item">
+              <a class="nav-link waves-effect" href="ClienteCuenta.html">Mi cuenta</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="#" target="_blank">Perfil</a>
+              <a class="nav-link waves-effect" href="ClienteDirectorio.html" target="_blank">Directorio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="#" target="_blank">Tablas</a>
+              <a class="nav-link waves-effect" href="ClienteOrdenes.html" target="_blank">Mis Ordenes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="#" target="_blank">Ordenes</a>
+              <a class="nav-link waves-effect" href="ClientePagos.html" target="_blank">Informacion de pago</a>
             </li>
           </ul>
 
@@ -54,13 +55,13 @@
           <ul class="navbar-nav nav-flex-icons">
             <li class="nav-item">
               <a href="home.html.html" class="nav-link border border-danger rounded waves-effect text-danger" target="_blank">
-                <i class="fas fa-sign-out-alt" style="color: #199aff"></i> Salir
+                <i class="fas fa-sign-out-alt" style="color: #ff4444"></i> Salir
               </a>
             </li>
           </ul>
+          <!-- /Right -->
 
         </div>
-
       </div>
     </nav>
     <!-- Navbar -->
@@ -71,12 +72,19 @@
     <div class="container-fluid mt-5">
 
       <!-- Heading -->
-      <div class="card mb-4 wow fadeIn">
+<!--      <div class="card mb-4 wow fadeIn">
 
-        <!--Card content-->
+        &lt;!&ndash;Card content&ndash;&gt;
+        <div class="card-body d-sm-flex justify-content-between">
 
+          <h4 class="mb-2 mb-sm-0 pt-1">
+            <a href="index.html" target="_blank">SkinCol</a>
+            &lt;!&ndash; <span>/</span>
+            <span>Mi Tablero</span> &ndash;&gt;
+          </h4>
+        </div>
 
-      </div>
+      </div>-->
       <!-- Heading -->
 
       <!--Grid row-->
@@ -90,63 +98,56 @@
 
             <!--Card content-->
             <div class="card-body">
+              <h1 class="display-4">Mi Tablero</h1>
+              <div class="alert alert-secondary" role="alert">
+                Hola, Usuario!
+              </div>
+              <p>Desde el panel de Mi cuenta, tiene la capacidad de ver una instantánea de la actividad reciente de su
+                cuenta y actualizar la información de su cuenta. Seleccione un enlace de abajo para ver o editar
+                información.
+              </p>
+              <hr>
+              <div class="row">
+                <div class="col-6">
+                  <h3>Informacion del contacto</h3>
+                  <a href="">Editar</a>
 
-              <!-- Table  -->
-              <div class="row justify-content-end">
-                <div class="col-md-12 ">
-                  <div class="btn btn-success" onclick="mostratform(true)"><i class="far fa-plus-square"></i> Agregar</div>
+                </div>
+                <div class="col-6">
+                  <h3>Boletin de noticias</h3>
                 </div>
               </div>
-
-              <table class="table table-hover">
-
-                <!-- Table head -->
-                <div id="listadoregistros">
-                  <table id="tbllistado" class="table table-striped">
-                    <thead class="blue-grey lighten-4">
-                      <tr>
-                        <th>No.</th>
-                        <th>Nit</th>
-                        <th>Dirección</th>
-                        <th>Correo</th>
-                        <th>Telefono</th>
-                      </tr>
-                    </thead>
-                  </table>
+              <div class="row mt-3">
+                  <div class="col-6">
+                      <span class="text-muted">Charles J. Garcia</span>
+                    </h6>
+                    <h6>
+                      <span class="text-muted">CharlesJGarcia@gustr.com</span>
+                    </h6>
+                    <h6 class="">
+                      <p>Cambiar Contraseña</p>
+                    </h6>
+                  </div>
+                  <div class="col-6">
+                    <p class="text-muted">Actualmente estás suscrito a 'Suscripción General'</p>
+                  </div>
                 </div>
-                <!-- Table head -->
-              </table>
-              <!-- Table  -->
-
-
-              <!-- Form -->
-              <div class="panel-body" style="height: 400px;" id="formularioregistros">
-                <form name="formulario" id="formulario" method="POST">
-                  <div class="form-group col-sm-12 col-md-6 col-xl-10">
-                      <label>NIT</label>
-                      <input type="hidden" name="idproveedor" id="idproveedor">
-                      <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese un Nombre" required>
+                <div class="row mt-3">
+                  <div class="col">
+                    <h3>Directorio</h3>
+                    <p>Administrar direcciones</p>
                   </div>
-                  <div class="form-group col-sm-12 col-md-6 col-xl-10">
-                    <label>Dirección</label>
-                    <input type="text" name="direccion" id="direccion" class="form-control" placeholder="Ingrese la Dirección">
+                </div>
+                <div class="row mt-3">
+                  <div class="col">
+                    <h3>Direccion de facturacion por defecto</h3>
+                    <p class="text-muted">No ha establecido una dirección de facturación predeterminada.</p>
                   </div>
-                  <div class="form-group col-sm-12 col-md-6 col-xl-10">
-                      <label>Correo</label>
-                      <input type="text" name="correo" id="correo" class="form-control" placeholder="Ingrese el Correo">
+                  <div class="col">
+                    <h3>Dirección de entrega por defecto</h3>
+                    <p class="text-muted">No ha establecido una dirección de envío predeterminada.</p>
                   </div>
-                  <div class="form-group col-sm-12 col-md-6 col-xl-10">
-                    <label>Telefono</label>
-                    <input id="telefono" name="telefono" class="form-control" type="text" placeholder="Ingrese el Telefono">
-                  </div>
-                  <div class="form-group col-sm-12 col-md-6 col-xl-10">
-                    <button class="btn btn-primary" type="submit" id="btnGuardar"><i class="fa fa-save"></i> Guardar</button>
-                    <button class="btn btn-danger" type="button" onclick="canelarform()"><i class="fa fa-arrow-alt-circle-left"></i> Cancelar</button>
-                  </div>
-                </form>
-              </div>
-              <!-- Form -->
-
+                </div>
             </div>
 
           </div>
@@ -272,26 +273,26 @@
       data: {
         labels: ["January", "February", "March", "April", "May", "June", "July"],
         datasets: [{
-            label: "My First dataset",
-            backgroundColor: [
-              'rgba(105, 0, 132, .2)',
-            ],
-            borderColor: [
-              'rgba(200, 99, 132, .7)',
-            ],
-            borderWidth: 2,
-            data: [65, 59, 80, 81, 56, 55, 40]
-          },
-          {
-            label: "My Second dataset",
-            backgroundColor: [
-              'rgba(0, 137, 132, .2)',
-            ],
-            borderColor: [
-              'rgba(0, 10, 130, .7)',
-            ],
-            data: [28, 48, 40, 19, 86, 27, 90]
-          }
+          label: "My First dataset",
+          backgroundColor: [
+            'rgba(105, 0, 132, .2)',
+          ],
+          borderColor: [
+            'rgba(200, 99, 132, .7)',
+          ],
+          borderWidth: 2,
+          data: [65, 59, 80, 81, 56, 55, 40]
+        },
+        {
+          label: "My Second dataset",
+          backgroundColor: [
+            'rgba(0, 137, 132, .2)',
+          ],
+          borderColor: [
+            'rgba(0, 10, 130, .7)',
+          ],
+          data: [28, 48, 40, 19, 86, 27, 90]
+        }
         ]
       },
       options: {
